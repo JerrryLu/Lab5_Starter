@@ -33,7 +33,7 @@ function init() {
   const jsConfetti = new JSConfetti();
   button.addEventListener('click', () => {
     aud.play();
-    if(hornSel.value == "party-horn") {
+    if(hornSel.value == "party-horn" && vol.value > 0) {
       jsConfetti.addConfetti();
     }
   });
